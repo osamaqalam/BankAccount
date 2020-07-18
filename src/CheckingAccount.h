@@ -13,7 +13,13 @@
 
 class CheckingAccount : public Account
 {
+private:
+	double transactionFee;
 
+public:
+	CheckingAccount(double bal, double fee);
+	void credit (double credit);
+	void debit (double debit);
 };
 
 

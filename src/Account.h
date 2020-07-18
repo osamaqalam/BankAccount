@@ -19,8 +19,9 @@ private:
 public:
 	Account (double bal);
 	void credit (double credit);
-	void debit (double debit);
+	bool debit (double debit);
 	double getBalance() {return balance;}
+	void setBalance(double bal) {balance = bal;}
 };
 
 

@@ -23,10 +23,16 @@ void Account::credit (double credit)
 	if (credit > 0)
 		balance += credit;
 }
-void Account::debit (double debit)
+bool Account::debit (double debit)
 {
 	if (debit <= balance)
+	{
 		balance -= debit;
+		return true;
+	}
 	else
+	{
 		cerr << "Debit amount exceeded account balance";
+		return false;
+	}
 }
