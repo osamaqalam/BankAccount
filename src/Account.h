@@ -13,14 +13,14 @@ using namespace std;
 
 class Account
 {
-	private:
-		double balance;
+private:
+	double balance;
 
-	public:
-		Account (double bal);
-		void credit (double credit);
-		void debit (double debit);
-		double getBalance() {return balance;}
+public:
+	Account (double bal);
+	void credit (double credit);
+	void debit (double debit);
+	double getBalance() {return balance;}
 };
 
 

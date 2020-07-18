@@ -6,14 +6,15 @@
  */
 
 #include "Account.h"
+#include "SavingsAccount.h"
 
 
 int main ()
 {
 	Account acc (1000);
+	SavingsAccount sAcc(1000,0.1);
 
-	cout << acc.getBalance() << endl;
-	acc.credit(300);
-	cout << acc.getBalance() << endl;
+	cout << sAcc.calculateInterest() << endl;
+
 
 }

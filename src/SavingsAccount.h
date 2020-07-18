@@ -12,7 +12,12 @@
 
 class SavingsAccount : public Account
 {
+private:
+	double interestRate;
 
+public:
+	SavingsAccount(double bal, double interest);
+	double calculateInterest ();
 };
 
 
